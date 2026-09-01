@@ -10,443 +10,237 @@
 
 <style>
 
-body{
+body {
 
-  margin:0;
+    margin: 0;
 
-  background:#f7f3eb;
+    background: #f7f3eb;
 
-  color:#26382d;
+    color: #26382d;
 
-  font-family:Georgia,serif;
-
-}
-
-nav{
-
-  padding:25px;
-
-  display:flex;
-
-  justify-content:space-between;
-
-  border-bottom:1px solid #ddd5c8;
+    font-family: Georgia, serif;
 
 }
 
-.logo{
+/* NAVIGATION */
 
-  font-size:20px;
+nav {
 
-  letter-spacing:3px;
+    padding: 25px;
 
-}
+    display: flex;
 
-nav a{
+    justify-content: space-between;
 
-  color:#26382d;
+    align-items: center;
 
-  text-decoration:none;
-
-  font-family:Arial;
-
-  font-size:12px;
-
-}.hero{
-
-  min-height:75vh;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  text-align:center;
-
-  padding:30px;
-
-  background:
-
-    linear-gradient(rgba(247,243,235,.25),rgba(247,243,235,.25)),
-
-    url(<img src="4B3F7528-5990-45AA-8D5C-078078FD5C99.png" alt="Petal & Pearl">);
-
-  background-size:cover;
-
-  background-position:center;
-
-.
-}
-
-.hero p{
-
-  font-family:Arial;
-
-  letter-spacing:3px;
-
-  font-size:11px;
+    border-bottom: 1px solid #ddd5c8;
 
 }
 
-h1{
+.logo {
 
-  font-size:60px;
+    font-size: 20px;
 
-  font-weight:normal;
-
-  line-height:.95;
-
-  margin:25px 0;
+    letter-spacing: 3px;
 
 }
 
-.button{
+nav a {
 
-  display:inline-block;
+    color: #26382d;
 
-  padding:16px 25px;
+    text-decoration: none;
 
-  background:#314b3d;
+    font-family: Arial, sans-serif;
 
-  color:white;
-
-  text-decoration:none;
-
-  font-family:Arial;
-
-  font-size:11px;
-
-  letter-spacing:2px;
+    font-size: 12px;
 
 }
 
-.intro{
+/* HERO */
 
-  text-align:center;
+.hero {
 
-  padding:90px 25px;
+    min-height: 70vh;
 
-}
+    display: flex;
 
-.intro h2{
+    align-items: center;
 
-  font-size:38px;
+    justify-content: center;
 
-  font-weight:normal;
+    text-align: center;
 
-}
+    padding: 30px;
 
-.intro p{
+    box-sizing: border-box;
 
-  max-width:550px;
+    background:
 
-  margin:auto;
+        linear-gradient(
 
-  font-family:Arial;
+            rgba(247,243,235,.35),
 
-  line-height:1.8;
+            rgba(247,243,235,.35)
 
-  color:#657168;
+        ),
 
-}
+        url("4B3F7528-5990-45AA-8D5C-078078FD5C99.png");
 
-.collections{
+    background-size: cover;
 
-  padding:30px 20px 90px;
-
-  text-align:center;
+    background-position: center;
 
 }
 
-.collections h2{
+.hero p {
 
-  font-size:36px;
+    font-family: Arial, sans-serif;
 
-  font-weight:normal;
+    letter-spacing: 3px;
 
-  margin-bottom:35px;
-
-}
-
-.grid{
-
-  display:grid;
-
-  grid-template-columns:1fr 1fr;
-
-  gap:15px;
-
-  max-width:900px;
-
-  margin:auto;
+    font-size: 11px;
 
 }
 
-.card{
+h1 {
 
-  height:250px;
+    font-size: 60px;
 
-  display:flex;
+    font-weight: normal;
 
-  align-items:flex-end;
+    line-height: .95;
 
-  padding:20px;
-
-  text-align:left;
-
-  background:#dce8d8;
+    margin: 25px 0;
 
 }
 
-.card:nth-child(2){background:#e7d9ca}
+.button {
 
-.card:nth-child(3){background:#d9dce7}
+    display: inline-block;
 
-.card:nth-child(4){background:#eadce5}
+    padding: 16px 25px;
 
-.card h3{
+    background: #314b3d;
 
-  font-size:25px;
+    color: white;
 
-  font-weight:normal;
+    text-decoration: none;
 
-}
+    font-family: Arial, sans-serif;
 
-.custom{
+    font-size: 11px;
 
-  margin:0 20px 80px;
-
-  padding:70px 25px;
-
-  text-align:center;
-
-  background:#314b3d;
-
-  color:white;
+    letter-spacing: 2px;
 
 }
 
-.custom h2{
+/* INTRO */
 
-  font-size:40px;
+.intro {
 
-  font-weight:normal;
+    text-align: center;
 
-}
-
-.custom p{
-
-  max-width:500px;
-
-  margin:20px auto 30px;
-
-  font-family:Arial;
-
-  line-height:1.7;
+    padding: 90px 25px;
 
 }
 
-.custom .button{
+.intro h2 {
 
-  background:#f7f3eb;
+    font-size: 38px;
 
-  color:#314b3d;
-
-}
-
-footer{
-
-  text-align:center;
-
-  padding:40px;
-
-  font-family:Arial;
-
-  font-size:10px;
-
-  letter-spacing:2px;
+    font-weight: normal;
 
 }
 
-@media(max-width:600px){
+.intro p {
 
-  h1{font-size:50px}
+    max-width: 550px;
 
-  .grid{grid-template-columns:1fr}
+    margin: auto;
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.8;
+
+    color: #657168;
 
 }
 
-</style>
-
-</head>
-
-<body>
-
-<nav>
-
-  <div class="logo">PETAL & PEARL</div>
-
-  <a href="#collections">SHOP</a>
-
-</nav>
-
-<section class="hero">
-
-  <div>
-
-    <p>JEWELRY INSPIRED BY NATURE</p>
-
-    <h1>Little things<br>worth keeping.</h1>
-
-    <a class="button" href="#collections">DISCOVER THE COLLECTION</a>
-
-  </div>
-
-</section>
-
-<section class="intro">
-
-  <h2>Not just jewelry.</h2>
-
-  <p>
-
-    Little pieces of a story. Petal & Pearl creates
-
-    nature-inspired jewelry for the sentimental ones,
-
-    the dreamers, and the people who find beauty
-
-    in the little things.
-
-  </p>
-
-</section>
-
-<section class="collections" id="collections">
-
-  <h2>Discover your treasure.</h2>
-
-
-  <p>
-
-    Choose your piece, personalize it, add an engraving,
-
-    and create something that belongs to your story.
-
-  </p>
-
-  <a class="button" href="mailto:hello@petalandpearl.com">
-
-    CREATE YOUR PIECE
-  <div class="grid">
-<div class="collection-card">
-
-    <a href="flora.html">
-
-        <img src="flora.PNG" alt="Flora collection">
-
-        <div class="collection-overlay">
-
-            🌸 Flora
-
-        </div>
-
-    </a>
-
-</div>
-
-<div class="collection-card">
-
-    <a href="tide.html">
-
-        <img src="tide.PNG" alt="Tide collection">
-
-        <div class="collection-overlay">
-
-            🐚 Tide
-
-        </div>
-
-    </a>
-
-</div>
-
-<div class="collection-card">
-
-    <a href="celestial.html">
-
-        <img src="celestial.PNG" alt="Celestial collection">
-
-        <div class="collection-overlay">
-
-            ✦ Celestial
-
-        </div>
-
-    </a>
-
-</div>
-
-<div class="collection-card">
-
-    <a href="personal.html">
-
-        <img src="personal.PNG" alt="Personal collection">
-
-        <div class="collection-overlay">
-
-            ♡ Personal
-
-        </div>
-
-    </a>
-
-</div>
-    
-
- 
-}/* COLLECTIONS */
+/* COLLECTIONS */
 
 .collections {
 
-    width: 100%;
+    padding: 30px 20px 90px;
 
-    padding: 0 10px 60px;
+    text-align: center;
 
     box-sizing: border-box;
 
 }
 
-.collections .grid {
+.collections h2 {
+
+    font-size: 36px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+
+}
+
+.collections > p {
+
+    max-width: 500px;
+
+    margin: 0 auto 30px;
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.7;
+
+    color: #657168;
+
+}
+
+/* CREATE YOUR PIECE BUTTON */
+
+.collections > .button {
+
+    margin-bottom: 45px;
+
+}
+
+/* COLLECTION GRID */
+
+.grid {
 
     width: 100%;
 
-    display: flex;
+    max-width: 900px;
 
-    flex-direction: column;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
 
     gap: 18px;
 
-    margin: 0;
-
-    padding: 0;
-
 }
+
+/* COLLECTION CARDS */
 
 .collection-card {
 
     width: 100%;
 
-    height: 260px;
+    height: 300px;
 
     position: relative;
 
     overflow: hidden;
-
-    margin: 0;
-
-    padding: 0;
 
 }
 
@@ -474,7 +268,11 @@ footer{
 
     display: block;
 
+    transition: transform .5s ease;
+
 }
+
+/* WORDS ON TOP OF IMAGE */
 
 .collection-overlay {
 
@@ -486,7 +284,7 @@ footer{
 
     bottom: 0;
 
-    padding: 25px 15px 18px;
+    padding: 45px 15px 22px;
 
     text-align: center;
 
@@ -494,7 +292,7 @@ footer{
 
         transparent,
 
-        rgba(0, 0, 0, 0.55)
+        rgba(0,0,0,.6)
 
     );
 
@@ -502,31 +300,393 @@ footer{
 
     font-family: Georgia, serif;
 
-    font-size: 20px;
+    font-size: 22px;
 
     letter-spacing: 2px;
 
     text-transform: uppercase;
 
-}
-}
-</div>
+    text-shadow: 0 2px 8px rgba(0,0,0,.4);
 
-  </div>
+}
+
+.collection-card:hover img {
+
+    transform: scale(1.03);
+
+}
+
+/* CUSTOM */
+
+.custom {
+
+    margin: 0 20px 80px;
+
+    padding: 70px 25px;
+
+    text-align: center;
+
+    background: #314b3d;
+
+    color: white;
+
+    box-sizing: border-box;
+
+}
+
+.custom h2 {
+
+    font-size: 40px;
+
+    font-weight: normal;
+
+}
+
+.custom p {
+
+    max-width: 500px;
+
+    margin: 20px auto 30px;
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.7;
+
+}
+
+.custom .button {
+
+    background: #f7f3eb;
+
+    color: #314b3d;
+
+}
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+/* PHONE */
+
+@media (max-width: 600px) {
+
+    nav {
+
+        padding: 20px;
+
+    }
+
+    .logo {
+
+        font-size: 15px;
+
+    }
+
+    .hero {
+
+        min-height: 65vh;
+
+        padding: 25px;
+
+    }
+
+    h1 {
+
+        font-size: 45px;
+
+    }
+
+    .intro {
+
+        padding: 70px 25px;
+
+    }
+
+    .intro h2 {
+
+        font-size: 32px;
+
+    }
+
+    .collections {
+
+        padding: 20px 10px 70px;
+
+    }
+
+    .collections h2 {
+
+        font-size: 30px;
+
+    }
+
+    .grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+    .collection-card {
+
+        height: 260px;
+
+    }
+
+    .collection-overlay {
+
+        font-size: 20px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+
+        PETAL & PEARL
+
+    </div>
+
+    <a href="#collections">
+
+        SHOP
+
+    </a>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div>
+
+        <p>
+
+            JEWELRY INSPIRED BY NATURE
+
+        </p>
+
+        <h1>
+
+            Little things<br>
+
+            worth keeping.
+
+        </h1>
+
+        <a class="button" href="#collections">
+
+            DISCOVER THE COLLECTION
+
+        </a>
+
+    </div>
 
 </section>
+
+<!-- INTRO -->
+
+<section class="intro">
+
+    <h2>
+
+        Not just jewelry.
+
+    </h2>
+
+    <p>
+
+        Little pieces of a story. Petal & Pearl creates
+
+        nature-inspired jewelry for the sentimental ones,
+
+        the dreamers, and the people who find beauty
+
+        in the little things.
+
+    </p>
+
+</section>
+
+<!-- COLLECTIONS -->
+
+<section class="collections" id="collections">
+
+    <h2>
+
+        Discover your treasure.
+
+    </h2>
+
+    <p>
+
+        Choose your piece, personalize it, add an engraving,
+
+        and create something that belongs to your story.
+
+    </p>
+
+    <a class="button" href="mailto:hello@petalandpearl.com">
+
+        CREATE YOUR PIECE
+
+    </a>
+
+    <div class="grid">
+
+        <!-- FLORA -->
+
+        <div class="collection-card">
+
+            <a href="flora.html">
+
+                <img
+
+                    src="flora.PNG"
+
+                    alt="Flora collection"
+
+                >
+
+                <div class="collection-overlay">
+
+                    🌸 Flora
+
+                </div>
+
+            </a>
+
+        </div>
+
+        <!-- TIDE -->
+
+        <div class="collection-card">
+
+            <a href="tide.html">
+
+                <img
+
+                    src="tide.PNG"
+
+                    alt="Tide collection"
+
+                >
+
+                <div class="collection-overlay">
+
+                    🐚 Tide
+
+                </div>
+
+            </a>
+
+        </div>
+
+        <!-- CELESTIAL -->
+
+        <div class="collection-card">
+
+            <a href="celestial.html">
+
+                <img
+
+                    src="celestial.PNG"
+
+                    alt="Celestial collection"
+
+                >
+
+                <div class="collection-overlay">
+
+                    ✦ Celestial
+
+                </div>
+
+            </a>
+
+        </div>
+
+        <!-- PERSONAL -->
+
+        <div class="collection-card">
+
+            <a href="personal.html">
+
+                <img
+
+                    src="personal.PNG"
+
+                    alt="Personal collection"
+
+                >
+
+                <div class="collection-overlay">
+
+                    ♡ Personal
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CUSTOM -->
 
 <section class="custom">
 
-  <h2>Make it yours.</h2>
+    <h2>
 
-  </a>
+        Make it yours.
+
+    </h2>
+
+    <p>
+
+        Create a piece that carries your story with you.
+
+    </p>
+
+    <a class="button" href="mailto:hello@petalandpearl.com">
+
+        GET IN TOUCH
+
+    </a>
 
 </section>
 
+<!-- FOOTER -->
+
 <footer>
 
-  PETAL & PEARL · JEWELRY INSPIRED BY NATURE
+    PETAL & PEARL · JEWELRY INSPIRED BY NATURE
 
 </footer>
 
