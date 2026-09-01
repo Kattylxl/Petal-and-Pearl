@@ -405,17 +405,28 @@ footer{
 </div>
     
 
- /* Collection cards */
+ 
+}/* COLLECTIONS */
 
-.grid {
-
-    display: grid;
-
-    grid-template-columns: 1fr;
-
-    gap: 28px;
+.collections {
 
     width: 100%;
+
+    padding: 0 10px 60px;
+
+    box-sizing: border-box;
+
+}
+
+.collections .grid {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
 
     margin: 0;
 
@@ -427,11 +438,15 @@ footer{
 
     width: 100%;
 
-    height: 420px;
+    height: 260px;
+
+    position: relative;
 
     overflow: hidden;
 
-    position: relative;
+    margin: 0;
+
+    padding: 0;
 
 }
 
@@ -445,6 +460,8 @@ footer{
 
     position: relative;
 
+    text-decoration: none;
+
 }
 
 .collection-card img {
@@ -457,31 +474,27 @@ footer{
 
     display: block;
 
-    transition: transform 0.5s ease;
-
 }
 
 .collection-overlay {
 
     position: absolute;
 
-    inset: 0;
+    left: 0;
 
-    display: flex;
+    right: 0;
 
-    align-items: flex-end;
+    bottom: 0;
 
-    justify-content: center;
+    padding: 25px 15px 18px;
 
-    padding: 30px;
+    text-align: center;
 
     background: linear-gradient(
 
-        to top,
+        transparent,
 
-        rgba(0, 0, 0, 0.5),
-
-        transparent 50%
+        rgba(0, 0, 0, 0.55)
 
     );
 
@@ -489,19 +502,11 @@ footer{
 
     font-family: Georgia, serif;
 
-    font-size: 24px;
+    font-size: 20px;
 
     letter-spacing: 2px;
 
     text-transform: uppercase;
-
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-
-}
-
-.collection-card:hover img {
-
-    transform: scale(1.03);
 
 }
 }
